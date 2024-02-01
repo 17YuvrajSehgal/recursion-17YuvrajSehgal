@@ -1,0 +1,64 @@
+{
+  "tests": [
+    {
+      "name": "test_reverse",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "pytest test_reverseString.py",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "test_mergesort",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "pytest test_mergesort.py",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "test_list",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "pytest test_list.py",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "test_isprime",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "pytest test_isprime.py",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "test_fact",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "pytest test_fact.py",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "test_bin",
+      "setup": "sudo -H pip3 install pytest",
+      "run": "pytest test_bin.py",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 1
+    }
+  ]
+}
