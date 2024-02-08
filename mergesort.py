@@ -1,4 +1,6 @@
 # Implement the mergesort algorithm on arrays
+import test_mergesort
+
 
 class Mergesort(object):         # An object to mergesort Arrays
    def __init__(self,            # Constructor takes the unordered
@@ -10,10 +12,14 @@ class Mergesort(object):         # An object to mergesort Arrays
 
    def getArray(self):
       return self.__arr
-   
-   def mergesort(self, lo, hi):  # Perform mergesort on subrange
-      ## ADD YOUR CODE HERE
-      return
+
+   def mergesort(self, lo, hi):
+      if hi - lo > 1:  # Check if more than 1 element
+         mid = (hi + lo) // 2  # Find the midpoint
+         self.mergesort(lo, mid)  # Sort the first half
+         self.mergesort(mid, hi)  # Sort the second half
+         self.merge(lo, mid, hi)  # Merge the two halves
+
 
    def merge(self, lo, mid, hi): # Merge 2 sorted subranges of array
       n = 0                      # into work array which starts empty
@@ -39,4 +45,12 @@ class Mergesort(object):         # An object to mergesort Arrays
       while n > 0:               # Copy sorted work array contents
          n -= 1  
          self.__arr[lo + n] = self.__work[n]
-    
+
+def main():
+   test_mergesort.test_sort()
+   test_mergesort.test_sort2()
+   test_mergesort.test_sort3()
+
+
+if __name__ == '__main__':
+   main()

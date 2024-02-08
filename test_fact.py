@@ -4,7 +4,7 @@ def test_fact():
     n = 2
     assert fact.factorial(n) == 2
 
-def test_fact():
+def test_fact1():
     n = 4
     assert fact.factorial(n) == 24
 
